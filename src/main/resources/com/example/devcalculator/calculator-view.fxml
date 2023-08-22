@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.devcalculator.controllers.CalculatorController">
+   <children>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#47a0edde" height="510.0" layoutX="118.0" layoutY="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="564.0" />
+      <Label layoutX="288.0" layoutY="69.0" text="Dev Calculator" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="162.0" layoutY="146.0" text="Average programmer salary" textFill="WHITE" />
+      <Button layoutX="546.0" layoutY="491.0" mnemonicParsing="false" onAction="#calculate" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: white; -fx-cursor: hand;" text="Calcular" textFill="#47a0ed" />
+      <Label layoutX="162.0" layoutY="207.0" text="Tasks / Sprints/ Activities" textFill="WHITE" />
+      <TextField fx:id="salaryAverage" layoutX="162.0" layoutY="165.0" prefHeight="25.0" prefWidth="224.0" promptText="Ex: 2000" style="-fx-background-color: white;" />
+      <TextArea fx:id="activities" layoutX="162.0" layoutY="225.0" prefHeight="247.0" prefWidth="476.0" promptText="Ex: [activity - time], ..." style="-fx-background-color: white;" wrapText="true" />
+      <TextField fx:id="discount" layoutX="414.0" layoutY="165.0" prefHeight="25.0" prefWidth="224.0" promptText="Ex: 1000" style="-fx-background-color: white;" />
+      <Label layoutX="414.0" layoutY="146.0" text="Discount" textFill="WHITE" />
+      <Rectangle fx:id="alertShape" arcHeight="20.0" arcWidth="20.0" fill="#ff9191" height="70.0" layoutX="200.0" layoutY="128.0" stroke="#ffffff92" strokeType="INSIDE" width="401.0" />
+      <Button fx:id="alertButton" layoutX="544.0" layoutY="128.0" mnemonicParsing="false" onAction="#closeAlert" prefHeight="68.0" prefWidth="57.0" style="-fx-background-color: white; -fx-background-radius: 0px 10px 10px 0px; -fx-opacity: 0.5; -fx-cursor: hand;" text="X" textFill="#ff1f1f" />
+      <Label fx:id="alertLabel" layoutX="221.0" layoutY="154.0" text="Label" textFill="WHITE" />
+      <Rectangle fx:id="modalShape" arcHeight="10.0" arcWidth="10.0" fill="#64b4f5" height="141.0" layoutX="280.0" layoutY="207.0" stroke="#ffffff7b" strokeType="INSIDE" width="241.0" />
+      <Label fx:id="modalLabelCost" layoutX="309.0" layoutY="248.0" text="Cost: R$ " textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="modalLabelValue" layoutX="391.0" layoutY="248.0" text="Valor" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="modalButton" layoutX="449.0" layoutY="309.0" mnemonicParsing="false" onAction="#closeModal" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: white; -fx-cursor: hand;" text="Close" textFill="#47a0ed" />
+   </children>
+</Pane>
